@@ -19,6 +19,7 @@ endforeach()
 add_library(benchmark ${SOURCE_FILES})
 set_target_properties(benchmark PROPERTIES
   OUTPUT_NAME "benchmark"
+  FOLDER "External/google_benchmark"
   VERSION ${GENERIC_LIB_VERSION}
   SOVERSION ${GENERIC_LIB_SOVERSION}
 )
@@ -47,6 +48,7 @@ endif()
 add_library(benchmark_main "benchmark_main.cc")
 set_target_properties(benchmark_main PROPERTIES
   OUTPUT_NAME "benchmark_main"
+  FOLDER "External/google_benchmark"
   VERSION ${GENERIC_LIB_VERSION}
   SOVERSION ${GENERIC_LIB_SOVERSION}
 )
