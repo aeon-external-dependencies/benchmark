@@ -16,6 +16,7 @@
 #include "internal_macros.h"
 
 #ifdef BENCHMARK_OS_WINDOWS
+struct IUnknown; // Workaround for /permissive- compile flag errors.
 #include <Shlwapi.h>
 #undef StrCat  // Don't let StrCat in string_util.h be renamed to lstrcatA
 #include <VersionHelpers.h>

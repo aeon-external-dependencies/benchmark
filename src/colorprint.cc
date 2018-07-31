@@ -25,6 +25,7 @@
 #include "internal_macros.h"
 
 #ifdef BENCHMARK_OS_WINDOWS
+struct IUnknown; // Workaround for /permissive- compile flag errors.
 #include <Windows.h>
 #include <io.h>
 #else
